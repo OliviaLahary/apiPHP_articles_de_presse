@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le fil de l'1FO</title>
+    
+</head>
+<body>
+    
+<div class="container">
+    <h1>Formulaire de test de l'api REST de compilation d'articles de presse.</h1> 
+     <h3>Méthode GET</h3>
+    <div>
+        <form action="api.php" method="GET"> 
+            <label for="articles">Afficher tous les articles</label>
+            <button type="submit" name="article"> Afficher les articles </button>
+        </form>
+    </div> 
+    <div>
+        <form action="api.php" method="GET">
+            <label for="category">Afficher toutes les categories</label>
+            <button type="submit" name="category"> Afficher les categories </button>           
+        </form>
+    </div> 
+    <div>
+        <form action="api.php" method="GET">
+            <label for="articles">Afficher un article par son ID</label>
+            <input type="text" name="article" id="" value="">
+            <button type="submit"> Afficher l'article </button>
+        </form>
+    </div>
+    <div>
+        <form action="api.php" method="GET">
+            <label for="artParCat">Afficher les articles par categories </label>
+            <input type="text" name="artParCat" id="">
+            <button type="submit">Afficher les articles</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <h3> Méthode DELETE </h3>
+    Supprimer un article  (postman)
+    <div>
+        <form action="api.php" method="DELETE">
+            <input type="text" name="article" id="">
+            <button type="submit">Supprimer l'article </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <h3> Méthode PUT </h3>
+    Ajouter + 1 dans upvote sur un id d’article(postman)
+    <div>
+        <form action="api.php" method="PUT">
+            <button type="submit" name="UpVote"> +1 </button>
+        </form>
+    </div> 
+    Enlever 1 dans downvote sur un id d'article.(postman)
+    <div>
+        <form action="api.php" method="PUT">
+            <button type="submit"name="DownVote"> -1 </button>
+        </form>
+    </div> 
+    <br><br>
+     <h3> Méthode POST </h3>
+
+    <div>
+        <form action="api.php" method="POST">
+            Lecture d'un fichier RSS:
+            categorie <input type="text" name="category" id="" >
+            url: <input type="text" size="50" name="lireRSS" id="" > 
+            <button type="submit"> Envoyer dans la base </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
